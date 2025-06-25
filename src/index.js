@@ -9,7 +9,6 @@ app.set ('json spaces' , 2)
 //nuestro priwee ws metodo Get ruta . raiz 
 
 app.get('/' , (req , res) => {
-
     res.json(
         {
             'Title' : 'Hola mundo'
@@ -19,11 +18,18 @@ app.get('/' , (req , res) => {
 
 
 app.get('/mensaje' , (req , res) => {
-
     res.json(
         {
             'Title' : 'Este es mi nuevo servidor'
         }
+    );
+})
+
+app.get('/hola' , (req , res) => {
+    res.json(
+        {
+            'Title' : 'cambios'
+         }
     );
 })
 
@@ -78,10 +84,6 @@ res.send({edad});
 }); 
 
 //FIN 
-
-
-
-
 
 
 //Iniciando el servidor
